@@ -10,7 +10,11 @@ if (num == 6 || num == 7)
 {
     Console.WriteLine("Да");
 }
-else
+else if (num < 6)
 {
     Console.WriteLine("Нет");
+}
+else
+{
+    Console.WriteLine("В неделе семь дней");
 }
