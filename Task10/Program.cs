@@ -5,3 +5,14 @@
 // 918 -> 1
 
 Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+int x = 0;
+if (num > 99 && num < 1000)
+{
+    x = (num % 100) / 10;
+    Console.WriteLine(x);
+}
+else
+{
+    Console.WriteLine("Условия не верны");
+}
