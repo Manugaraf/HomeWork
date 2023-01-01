@@ -4,13 +4,12 @@
 
 Console.WriteLine("Введите число N");
 int N = Convert.ToInt32(Console.ReadLine());
-
+int M = 1;
 int Line(int N)
 {
-    int a = 1;
     if (N <= 0) return -1;
-    if (N == 1) return 1;
-    Console.WriteLine(Line(N - 1));
+    if (N == M) return 1;
+    Console.WriteLine(Line(N - 1)); 
     return N;
 }
 Console.Write(Line(N));
