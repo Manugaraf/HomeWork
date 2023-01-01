@@ -2,14 +2,17 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
+
+
 Console.WriteLine("Введите число N");
 int N = Convert.ToInt32(Console.ReadLine());
-int M = 1;
-int Line(int N)
+int count = 2;
+PrintNumber(N, count);
+Console.Write(1);
+
+void PrintNumber(int N, int count)
 {
-    if (N <= 0) return -1;
-    if (N == M) return 1;
-    Console.WriteLine(Line(N - 1)); 
-    return N;
+  if (count > N) return;
+  PrintNumber(N, count + 1);
+  Console.Write(count + " ");
 }
-Console.Write(Line(N));
